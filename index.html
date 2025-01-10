@@ -3,7 +3,22 @@
     <head>
 
 <script>
-    alert("Hello! I am an alert box!!");
+    function promptPassword() {
+
+      var name = prompt("Enter your Username: ");
+      var pwd = prompt("Enter your Password: ");
+
+      if (pwd == 'P@ssw0rd') {
+        alert("Password is correct, you are allowed to enter the site");
+      }
+
+      while (pwd != 'P@ssw0rd') {
+        alert("Login is incorrect");
+        prompt("Enter your Password: ");
+      }
+
+    }
+
 </script>
         
 <title>the wasd</title>
